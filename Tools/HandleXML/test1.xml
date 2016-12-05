@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?><project>
+  <actions/>
+  <description/>
+  <keepDependencies>false</keepDependencies>
+  <properties>
+    <com.synopsys.arc.jenkins.plugins.ownership.jobs.JobOwnerJobProperty plugin="ownership@0.8"/>
+    <hudson.model.ParametersDefinitionProperty>
+      <parameterDefinitions>
+        <hudson.model.StringParameterDefinition>
+          <name>Name</name>
+          <description/>
+          <defaultValue>吴农中</defaultValue>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.TextParameterDefinition>
+          <name>Note</name>
+          <description/>
+          <defaultValue>考试开始时间：15:35:57
+考试时常：1个小时
+其它：考试为闭卷考试，请勿翻看任何资料或者上机操作</defaultValue>
+        </hudson.model.TextParameterDefinition>
+      <hudson.model.StringParameterDefinition><name>题目1</name><description>运行adb shell提示“adb server is out of date”可能会是什么原因呢？
+A.电脑未安装设备的驱动程序
+B.对应端口被占用
+C.设备没有root权限
+D.设备没有开启usb调试选项</description><defaultValue/></hudson.model.StringParameterDefinition><hudson.model.StringParameterDefinition><name>题目2</name><description>怎样把设备上的文件复制到pc上
+A.adb push &lt;local&gt;&lt;remote&gt;
+B.adb push &lt;remote&gt;&lt;local&gt;
+C.adb pull &lt;local&gt;&lt;remote&gt;
+D.adb pull &lt;remote&gt;&lt;local&gt;</description><defaultValue/></hudson.model.StringParameterDefinition><hudson.model.StringParameterDefinition><name>题目3</name><description>Windows上怎样查看端口信息
+A.netstat -ano | findstr 端口号
+B.netstat -ano | grep 端口号
+C.netstat ps | findstr 端口号
+D.netstat ps | grep 端口号</description><defaultValue/></hudson.model.StringParameterDefinition><hudson.model.StringParameterDefinition><name>题目4</name><description>下列哪些是adb devices存在的状态
+A.offline
+B.unauthorized
+C.devices
+D.device</description><defaultValue/></hudson.model.StringParameterDefinition><hudson.model.StringParameterDefinition><name>题目5</name><description>下列哪些命令可以看日志的输出时间
+A.adb logcat -v time 
+B.adb logcat -v threadtime
+C.adb logcat -v localtime
+D.adb logcat -v mtime</description><defaultValue/></hudson.model.StringParameterDefinition><hudson.model.StringParameterDefinition><name>题目6</name><description>手机系统设置中查看机身内存的选项
+A.关于手机
+B.应用管理
+C.存储
+D.显示</description><defaultValue/></hudson.model.StringParameterDefinition><hudson.model.StringParameterDefinition><name>题目7</name><description>手机系统设置中恢复出厂设置的选项
+A.安全和隐私
+B.开发者模式
+C.备份和重置
+D.关于手机</description><defaultValue/></hudson.model.StringParameterDefinition><hudson.model.StringParameterDefinition><name>题目8</name><description>开启开发者模式
+A.Kernel version
+B.Android version
+C.Model number
+D.Build number</description><defaultValue/></hudson.model.StringParameterDefinition><hudson.model.StringParameterDefinition><name>题目9</name><description>手机预装apk安装位置
+A./system/app
+B./system/priv-app
+C./data/local
+D./sdcard0</description><defaultValue/></hudson.model.StringParameterDefinition><hudson.model.StringParameterDefinition><name>题目10</name><description>手机系统设置中查看IMEI号的选项
+A.开发者模式
+B.关于手机
+C.手机拨号*#06#
+D.安全和隐私</description><defaultValue/></hudson.model.StringParameterDefinition><hudson.model.StringParameterDefinition><name>题目11</name><description>关于TestLink，下面说法正确的是
+A.TestLink是测试管理工具，可以管理从产品需求到用例执行及结果展示。
+B.TestLink在测试部仅用于管理测试用例和执行。
+C.TestLink可以将用例执行分配到指定用户
+D.TestLink在一个被测版本中，只能添加一次测试计划。</description><defaultValue/></hudson.model.StringParameterDefinition><hudson.model.StringParameterDefinition><name>题目12</name><description>TestLink里具有添加用户管理和项目管理权限人是
+A.池小波
+杨伟
+孙蕾
+霍展羽
+B.池小波
+孙蕾
+霍展羽
+C.刘毅
+孙蕾
+D.刘毅
+万鹏
+池小波</description><defaultValue/></hudson.model.StringParameterDefinition><hudson.model.StringParameterDefinition><name>题目13</name><description>TestLink里，测试用例执行结果包括
+A.计划中
+B.通过
+C.失败
+D.锁定</description><defaultValue/></hudson.model.StringParameterDefinition><hudson.model.StringParameterDefinition><name>题目14</name><description>哪些现象的严重程度属于“严重”？
+A.数据丢失
+B.启动apk出现crash
+C.浏览页面报500
+D.翻译错误</description><defaultValue/></hudson.model.StringParameterDefinition><hudson.model.StringParameterDefinition><name>题目15</name><description>bug type有哪些？
+A.PR（problem report）
+B.UI error
+C.CR(Change Request)
+D.language error</description><defaultValue/></hudson.model.StringParameterDefinition><hudson.model.StringParameterDefinition><name>题目16</name><description>如何确保bug提交到对应的项目下？
+A.在bug title中注明项目
+B.在bug操作步骤中注明项目
+C.在jira上选择对应的项目并提交bug
+D.跟开发口头沟通</description><defaultValue/></hudson.model.StringParameterDefinition><hudson.model.StringParameterDefinition><name>题目17</name><description>一次性问题如何验证？
+A.在一个版本上验证一次
+B.在一个版本上验证多次
+C.在连续多个版本上验证一次
+D.在连续多个版本上验证多次</description><defaultValue/></hudson.model.StringParameterDefinition><hudson.model.StringParameterDefinition><name>题目18</name><description>哪些现象的严重程度属于“致命”？
+A.数据丢失
+B.启动apk出现crash
+C.浏览页面报500
+D.翻译错误</description><defaultValue/></hudson.model.StringParameterDefinition><hudson.model.StringParameterDefinition><name>题目19</name><description>启动Windows系统时，要想直接进入最小系统配置的安全模式
+A.F7键
+B.F8键
+C.F9键
+D.F10键</description><defaultValue/></hudson.model.StringParameterDefinition><hudson.model.StringParameterDefinition><name>题目20</name><description>撤消一次或多次操作，可以用下面哪条命令_______。
+A.Alt+Z
+B.Alt+Q
+C.Ctrl+Z　
+D.Ctrl+Q</description><defaultValue/></hudson.model.StringParameterDefinition><hudson.model.StringParameterDefinition><name>题目21</name><description>我们测试内部常用的兼容性测试浏览器有哪些？
+A.猎豹
+B.QQ
+C.FireFox
+D.Chrome</description><defaultValue/></hudson.model.StringParameterDefinition><hudson.model.StringParameterDefinition><name>题目22</name><description>1G等同于
+A.1024M
+B.1024*1024*8 Byte
+C.1024*1024*8 Bit
+D.1024*1024M</description><defaultValue/></hudson.model.StringParameterDefinition><hudson.model.StringParameterDefinition><name>题目23</name><description>windows 的工具菜单中的查找功能，不能查找的是____。
+A.文件或文件夹
+B.包含指定文字或词组的文件
+C.网络中的计算机
+D.互联网上的网页</description><defaultValue/></hudson.model.StringParameterDefinition><hudson.model.StringParameterDefinition><name>题目24</name><description>IP地址是一串难以记忆的数字，人们用域名来代替它，完成IP地址和域名之间转换工作的是____服务器。
+A.DNS
+B.URL
+C.UNIX
+D.ISDN</description><defaultValue/></hudson.model.StringParameterDefinition><hudson.model.StringParameterDefinition><name>题目25</name><description>测试报告邮件主要内容包括
+A.测试报告摘要，包括发现多少问题，遗留主要问题及影响
+B.测试结论：是否建议发布
+C.如果app需要特殊安装方式的，需要描述安装方法；如果有需要后台控制的，需要提供后台地址及登录账号信息
+D.release notes信息</description><defaultValue/></hudson.model.StringParameterDefinition><hudson.model.StringParameterDefinition><name>题目26</name><description>下面哪个环节不属于MIG成都研发流程的一部分：
+A.原型设计，UI互动设计
+B.原型与UI评审
+C.提测
+D.测试报告评审</description><defaultValue/></hudson.model.StringParameterDefinition><hudson.model.StringParameterDefinition><name>题目27</name><description>关于问题单关闭机制，下列说法不正确的是：
+A.偶发问题开发已经将状态改为修复，且在某一版本上验证后没有问题，可以关闭问题单
+B.开发不可以关闭bug单
+C.对于建议级别的bug，经产品经理、开发经理、测试经理任意一人同意后，可以不修改直接关闭。但在问题单的comments里应记录同意关闭的经理的意见
+D.bug转需求的，可以关闭bug单，开需求单继续跟踪</description><defaultValue/></hudson.model.StringParameterDefinition><hudson.model.StringParameterDefinition><name>题目28</name><description>对于测试执行，下列说法正确的是：
+A.对于已发现且修复的问题，如果重现了，不需要提问题单，直接邮件沟通修复测试即可
+B.测试执行过程中，如果被block了，等待开发将block的功能修复再测
+C.测试回验bug时，需要把所有基本功能都过一遍
+D.兼容性测试应该跟功能测试并行安排</description><defaultValue/></hudson.model.StringParameterDefinition><hudson.model.StringParameterDefinition><name>题目29</name><description>常见测试用例设计方法包括
+A.等价类
+B.因果图
+C.边界值
+D.经验法</description><defaultValue/></hudson.model.StringParameterDefinition><hudson.model.StringParameterDefinition><name>题目30</name><description>关于等价类，下列说法错误的是
+A.在规定了输入数据必须遵守的规则的情况下,可确立一个有效等价类（符合规则）和一个无效等价类（不符合规则）
+B.在确知已划分的等价类中各元素在程序处理中的方式不同的情况下,则应再将该等价类进一步的划分为更小的等价类
+C.输入条件说明学历可为:专科、本科、硕士、博士四种之一，则分别取这四种这四个值作为四个有效等价类，另外把四种学历之外的任何学历作为无效等价类。
+D.在输入条件是一个布尔量的情况下,可确定一个有效等价类和一个无效等价类。
+</description><defaultValue/></hudson.model.StringParameterDefinition><hudson.model.StringParameterDefinition><name>题目31</name><description>关于边界值，下列说法错误的是
+A.关注输入输出等价类
+B.程序错误有在边界值附近集中的趋势
+C.当包含复杂的计算时，确定等价类的范围将变得非常困难
+D.白盒测试技术</description><defaultValue/></hudson.model.StringParameterDefinition><hudson.model.StringParameterDefinition><name>题目32</name><description>典型的缺陷发现趋势图是
+A.波浪形
+B.V形
+C.U形
+D.A形</description><defaultValue/></hudson.model.StringParameterDefinition><hudson.model.StringParameterDefinition><name>题目33</name><description>关于因果图，下列说法正确的是
+A.因果图也称石川图、鱼骨图
+B.分析令人不满意的情况的原因
+C.给出了各个原因之间的关系的模拟表示
+D.通过提问不断搜寻根本原因：为什么、什么、哪里、谁、怎样</description><defaultValue/></hudson.model.StringParameterDefinition><hudson.model.StringParameterDefinition><name>题目34</name><description>下列情况适合于使用场景分析法设计测试用例的是
+A.音量测试
+B.日期格式
+C.网上购物
+D.登录界面</description><defaultValue/></hudson.model.StringParameterDefinition><hudson.model.StringParameterDefinition><name>题目35</name><description>在C盘根目录下有两个子目录D1和D2，微机开机启动DOS成功后，键入了命令：C&gt;CD D1（回车）。现在若要进入子目录D2，应键入的DOS命令是_______。
+A.CD D2(回车)　
+B.CD D1\D2(回车) 
+C.CD \D2(回车)　
+D.CD \(回车)</description><defaultValue/></hudson.model.StringParameterDefinition><hudson.model.StringParameterDefinition><name>题目36</name><description>关于SVN以下描述正确的有？
+A.SVN是版本管理工具
+B.SVN具有版本回退功能
+C.SVN版本号是累加的
+D.SVN工具安装后具有命令行操作功能</description><defaultValue/></hudson.model.StringParameterDefinition><hudson.model.StringParameterDefinition><name>题目37</name><description>DOS批处理命令文件的扩展名是（）。
+A.COM
+B.BAT
+C.BAK
+D.EXE</description><defaultValue/></hudson.model.StringParameterDefinition><hudson.model.StringParameterDefinition><name>题目38</name><description>DOS命令下，静态操作的参数为？
+A.S
+B.Q
+C.F
+D.D</description><defaultValue/></hudson.model.StringParameterDefinition><hudson.model.StringParameterDefinition><name>题目39</name><description>DOS命令下，一般的强制操作参数为？
+A.S
+B.Q
+C.F
+D.D</description><defaultValue/></hudson.model.StringParameterDefinition><hudson.model.StringParameterDefinition><name>题目40</name><description>用户需要使用某一文件时，在命令中应指出文件（）。
+A.性质
+B.内容
+C.在磁盘上的准确路径
+D.属性</description><defaultValue/></hudson.model.StringParameterDefinition></parameterDefinitions>
+    </hudson.model.ParametersDefinitionProperty>
+    <com.sonyericsson.rebuild.RebuildSettings plugin="rebuild@1.20">
+      <autoRebuild>false</autoRebuild>
+    </com.sonyericsson.rebuild.RebuildSettings>
+  </properties>
+  <scm class="hudson.scm.NullSCM"/>
+  <canRoam>true</canRoam>
+  <disabled>false</disabled>
+  <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
+  <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
+  <triggers/>
+  <concurrentBuild>false</concurrentBuild>
+  <builders/>
+  <publishers/>
+  <buildWrappers/>
+</project>
