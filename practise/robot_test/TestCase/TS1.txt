@@ -1,0 +1,4 @@
+*** Settings ***
+Library           printTxt
+
+*** Test Cases ***
