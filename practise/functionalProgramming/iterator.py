@@ -22,7 +22,7 @@ class Container(object):
         print("[LOG] I made this iterator!")
         return self
 
-    def next(self): # python3请用__next__(self):
+    def next(self):  # python3请用__next__(self):
         if self.start < self.end:
             i = self.start
             self.start += 1
@@ -38,10 +38,14 @@ if __name__ == '__main__':
     for i in c:
         print i
 
-#demo 3
+
+# demo 3
 def test(lists):
     for i in lists:
         yield i
-a = test((i for i in range(5)))
+
+
+iterator = (i for i in range(5))
+a = test(iterator)
 for i in a:
     print i
