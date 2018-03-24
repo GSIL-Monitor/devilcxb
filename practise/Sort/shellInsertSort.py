@@ -11,37 +11,41 @@ def shell_insert_sort(lists, step):
     :param step: 步长
     :return: 排列好的数组
     """
-    print lists
     count = len(lists)
-    group = count / step
-    print group
-    while group > 1:
+    group = count / step #定义需要划分几个子集
+    while group > 1: #当划分的子集大于1时，循环
         lists = groups(lists, group)
-        print lists
-        lists = reduce(lambda x, y: x + y, map(lambda x: insertSort.insert_sort(x), lists))
+        temp_lists = [None]*count # 创建空的临时集合
+        for group_lists_index in range(len(lists)): #对每个子集的数字进行插入排序
+            lists[group_lists_index][0] = insertSort.insert_sort(lists[group_lists_index][0])
+        for group_lists in lists: #循环后得到一组新的数，用于下一轮循环
+            for i in range(len(group_lists[0])):
+                temp_lists[group_lists[1][i]] = group_lists[0][i]
+        lists = temp_lists
         print lists
         step += 1
         group = count / step
-    return insertSort.insert_sort(lists)
+    return lists
 
 
 def groups(lists, group):
     """
-    根据希尔排序要求，创建分组
+    根据希尔排序要求，创建分组,每一个子分组包含数值和下标两个集合，如[[[7, 2, 5], [0, 4, 8]], [[3, 9], [1, 5]], [[8, 4], [2, 6]], [[1, 6], [3, 7]]]
     :param lists: 列表
     :param group: 分组个数
     :return: 分组好的二维数组
     """
     new_lists = []
     for i in range(group):
-        temp_list = [lists[i]]
+        temp_list = [[lists[i]], [i]]
         j = i + group
         while j < len(lists):
-            temp_list.append(lists[j])
+            temp_list[0].append(lists[j]) # 自分组添加数值
+            temp_list[1].append(j)# 子分组添加下标
             j += group
         new_lists.append(temp_list)
     return new_lists
 
 
 if __name__ == '__main__':
-    shell_insert_sort([7, 3, 1, 2, 4, 6, 5], 2)
+    print shell_insert_sort([7, 3, 8, 1, 2, 9, 4, 6, 5], 2)

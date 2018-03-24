@@ -17,7 +17,7 @@ def bubbleSort(lists):
     """
     print lists
     for i in range(len(lists) - 1):  # 这个循环负责设置冒泡排序进行的次数
-        for j in range(len(lists) - i - 1):  # ｊ为列表下标
+        for j in range(len(lists) - i - 1):  # 每一轮排完以后，最后一个数字都不需要再排列了，所以循环每次减一
             if lists[j] > lists[j + 1]:
                 lists[j], lists[j + 1] = lists[j + 1], lists[j]
                 print lists

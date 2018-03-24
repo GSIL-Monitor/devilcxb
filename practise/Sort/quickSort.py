@@ -18,7 +18,7 @@ def quick_sort(lists):
     temp = lists[-1]  # 去最后一位数作为对比基数
     temp_lists = [temp]  # 并计入到临时表中
     bigger_count = 0
-    for i in range(count - 2):  # 循环到倒数第二位，如果比基数大，则排到后面。
+    for i in range(count - 1):  # 循环到倒数第二位，如果比基数大，则排到后面。
         if lists[i] > temp:
             lists.append(lists[i])
             del lists[i]
@@ -34,4 +34,4 @@ def quick_sort(lists):
 
 
 if __name__ == '__main__':
-    print quick_sort([7, 3, 1, 2, 4, 6, 5])
+    print quick_sort([7, 3, 1, 2, 4, 8, 6, 5, 9])

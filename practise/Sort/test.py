@@ -1,4 +1,2 @@
-a = []
-b = [1]
-if not a or not b:
-    print "OK"
+for i in range(1, 6):
+    print i
