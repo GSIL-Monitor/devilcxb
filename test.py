@@ -1,8 +1,1 @@
-sum = 0.01
-
-count = 2
-while count < 32:
-    sum = sum*2
-    count += 1
-
-print sum
+print (5913 + 11987 + 11612 + 13128 + 14612 + 14612 + 14613 + 14612 + 14613)/9
