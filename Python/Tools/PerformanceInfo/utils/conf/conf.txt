@@ -1,0 +1,2 @@
+packageName=com.tclmarket
+time=60000

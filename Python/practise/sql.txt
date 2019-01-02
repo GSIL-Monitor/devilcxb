@@ -1,0 +1,21 @@
+SELECT a.id,a.name,a.up_icon,a.tp_icon,a.icon,a.size,a.up_apk,a.tp_apk,a.apk,a.pay_type,a.recommend_name
+            ,a.publisher,a.download_count,a.real_download_count,a.description,axp.provider_id,a.editor_recommend 
+            ,a.package_name,a.version_code,a.version_name,ss.level level,tml.id tabListId,tml.priority
+            ,(SELECT tpv.property_value FROM tab_properties_value tpv 
+              WHERE tpv.list_id=tml.id
+                AND tpv.property_id=(SELECT id FROM tab_properties where tab_module_id=#{tabId} and name='from')) as 'from',
+             profile.apk_md5
+        FROM tab_module_list tml
+        LEFT JOIN app a
+          ON tml.resource_id=a.id
+        LEFT JOIN app_x_provider axp 
+            ON axp.app_id=a.id
+        LEFT JOIN stars_statistics ss 
+          ON a.id=ss.app_id
+        left join app_profile profile on a.id=profile.app_id
+        WHERE tml.tab_module_id = 2
+            AND resource_type = 'app'
+            AND a.status = 1
+            AND tml.status = 1
+        ORDER BY tml.priority
+        LIMIT 0,10

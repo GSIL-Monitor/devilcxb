@@ -1,0 +1,1 @@
+Tue, 30 Aug 2016 03:52:51 runScan.py[line:29] ERROR Command 'adb -s a972d6b6 push safeTester.jar /data/local/tmp' returned non-zero exit status 1

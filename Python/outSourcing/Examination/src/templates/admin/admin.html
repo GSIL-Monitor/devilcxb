@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head lang="zh-cn">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA_Compatible" content="IE=edge,chrome=1">
+    <title>后台管理</title>
+    <link rel="shortcut icon" href="../../static/img/favicon.ico">
+    <link rel="stylesheet" href="../../static/css/login.css">
+    <link rel="stylesheet" href="../../static/css/bootstrap/bootstrap.css">
+</head>
+<body>
+<div class="main-container" style="display:flex;flex-direction:column;height:100%;">
+    <header class="header-wrap">
+<div class="header">
+    <a href="login" class="logo"></a>
+    <div class="title"> TCL-VAL测试系统管理平台</div>
+    <div class="usr-bar">
+        <span class="li ico_user avatar "></span><a href="login" class="action"> 登录</a>|<a href="show_register" class="action"> 注册</a>
+    </div>
+    <div class="head-top">
+        <small id="currTime"></small>
+    </div>
+</div>
+    <div class="page-content" style="overflow:hidden; height:100%; ">
+        <div class="left-menu" id="leftMenu" style="margin-right:20px;">
+    <ul>
+        <li>
+            <a class="item on" href="/test_result_check" target="right1">测试结果查询</a>
+        </li>
+        <li>
+            <a class="item on" href="/show_safety_test_status" target="right1">用户查询</a>
+        </li>
+        <li>
+            <a class="item on" href="../maintenance_notification.html" target="right1">发送维护通知</a>
+        </li>
+        <li>
+            <a class="item on" href="/check_details" target="right1">取消任务</a>
+        </li>
+    </ul>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,1 @@
+http://10.115.101.230:8080/jenkins/view/Monkey/job/SpacePlus_Monkey/lastSuccessfulBuild/artifact/SpacePlus.apk||SpacePlus||com.clean.spaceplus||1000

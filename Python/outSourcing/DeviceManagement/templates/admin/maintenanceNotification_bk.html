@@ -1,0 +1,37 @@
+{% extends 'admin/master.html' %}
+{% block head %}
+{{ super() }}
+<link rel="icon" href="{{ url_for('static', filename = 'favicon.ico')}}" type="image/x-icon">
+{% endblock %}
+{% block body %}
+    <div class="container">
+      <br action="" method="post" class="form-maitenance">
+        <h2 class="form-signin-heading">维护通知:</h2>
+        <textarea name="maintenance" style='height:200px;width:800px;'>Hi,
+
+  We are sorry to notice that the compatibility server will be down during Aug 31th 2016 to Sep 2th 2016.
+
+  兼容性测试平台将在2016-08-31至2016-09-02期间维护，在此期间停止服务。给大家带来的不便，敬请谅解。
+
+BR
+MIG CD VAL Team</textarea>
+          </br>
+        <button class="btn btn-primary" type="submit" value="maintenanceNotificationSend" >发送</button>
+
+    </div> <!-- /container -->
+    <div class="container">
+      <br action="" method="post" class="form-recover">
+        <h2 class="form-signin-heading">恢复通知:</h2>
+        <textarea name="recover" style='height:200px;width:800px;'>Hi,
+
+  Compatibility Server is up now. we are sorry to give you inconvenience. Thanks for supporting us！
+
+  兼容性测试平台已经恢复正常，给大家带来的不便，敬请谅解。谢谢大家对兼容性平台一如既往的支持！
+
+BR
+MIG CD VAL Team</textarea>
+          </br>
+        <button class="btn btn-primary" type="submit" value="recoverNotificationSend" >发送</button>
+
+    </div> <!-- /container -->
+{% endblock %}

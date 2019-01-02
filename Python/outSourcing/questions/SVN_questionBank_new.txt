@@ -1,0 +1,75 @@
+15.（多选）在SVN版本库浏览器中，用户有读写权限，则可以进行以下（）操作。
+A、Delete
+B、Rename
+C、Blame
+D、Save as
+14.因为某些原因而重定位了(IP/URL).使用TortoiseSVN→（）把URL值改为新的版本库地址。
+A、switch
+B、Relocate
+C、Revert
+D、Export
+13.针对工作区内带红色感叹号的文件，如果你想看该文件做了哪些更改，只用在本地工作区中选中文件，右键菜单下选Tortoise SVN →（）或（）查看即可。
+A、Diff
+B、Repo-browser
+C、Diff with previous version
+D、Show log
+12.在本地计算机上checkout的工作区内，右键，选择（），系统弹出更新提示框，点击确定，则把服务器的最新版本更新下来。
+A、SVN Update
+B、SVN Commit
+C、SVN Get lock
+D、SVN Release lock
+11.在SVN版本库浏览器中，使用（）指令可以追溯源代码（.c文件）。
+A、Edit
+B、Show log
+C、Revision graph
+D、Blame
+10.在SVN版本库浏览器的右上角找到Revision，点击其右边的（）按钮在弹出的对话框中可以选择要追溯到的版本文件。
+A、Revision
+B、HEAD
+C、Show log
+D、Export
+9.在SVN版本库浏览器中，使用（）指令可以查看所选文件或目录的日志。
+A、Show log
+B、Rename
+C、Blame
+D、Save as
+8.本地计算机已经建立并Check out了工作区，在工作区内文件修改后会有红色的感叹号以示标记，空白区域，右键（），便可勾选要提交的文件。
+A、SVN Update
+B、SVN Commit
+C、SVN Get lock
+D、SVN Release lock
+7.在本地计算机硬盘新建的空白文件夹内，右键选择（）可以从SVN服务器下载受版本控制的文件。
+A、SVN Checkout
+B、Tortoise SVNCreate repository here
+C、Tortoise SVNSettings
+D、Tortoise SVNRepo-browser
+6.在SVN版本库浏览器内，选好目录，于空白处右键选择（）添加文件、选择（）添加文件夹。
+A、create folder
+B、Add file
+C、Add folder
+D、Export
+5.把本地的文件夹下的文件添加到服务器上的某个目录下面，那么在本地的目录右键Tortoise SVN（）进行。
+A、Import
+B、Create repository here
+C、Settings
+D、Export
+4.绿色的对勾标记代表（），红色的感叹号标记代表（），蓝色的加号代表（）。
+A、工作副本状态正常
+B、文件已被计划加入版本控制
+C、提交过程中出现冲突
+D、工作副本已修改
+3.如果想要清除服务器上的所有认证缓存，可以通过Tortoise SVNSettings（设置）对话框中的Saved Data（），按clear或者clear all按钮即可清空。
+A、Authentication data
+B、Save Authentication
+C、URL history
+D、Log messages
+2.在URL中输入访问路径后，会弹出Authentication对话框，在对话框中输入用户名和密码，点击（）可保存用户名和密码。
+A、Authentication data
+B、Save Authentication
+C、Settings
+D、Saved Data
+1.在空白处，单击右键，选择“Tortoise SVN”（）便可以进入SVN版本库浏览器。
+A、Repo-browser
+B、Create repository here
+C、Settings
+D、Import
