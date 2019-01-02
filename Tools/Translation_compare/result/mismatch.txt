@@ -1,4 +1,0 @@
-language[spanish] key[fillname_tips]: 
- excel:           
- properties_file: Fill in your name 
-
