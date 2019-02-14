@@ -234,15 +234,15 @@ class HandleJenkins(object):
         """
         return self.server.nodes[nodeName].is_idle()
 
-    def build_job(self, job_name, params):
+    def build_job(self, job_name, params=None, files=None):
         """
         构建Jenkins job
         :param job_name: job的名称
         :param params: 参数
+        :param params: 文件参数特有格式为：{'<file_para_name>': open("path_of_file", "r")}
         :return: None
         """
-        self.server.build_job(job_name, params=params)
-        logging("")
+        self.server.get_job(jobname=job_name).invoke(build_params=params, files=files)
 
     def build_job_new(self, job_name, params):
         """
